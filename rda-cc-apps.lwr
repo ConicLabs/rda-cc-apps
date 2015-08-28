@@ -19,12 +19,9 @@
 
 category: common
 #depends: gnuradio uhd 
-depends: gr-rda
+depends: cmake gr-rda
 source: git://https://github.com/ConicLabs/rda-cc-apps.git
 #source: put a public get repo here
 gitbranch: master
 inherit: cmake
 
-configure {
-  mkdir -p $prefix/share/rda-cc-apps/devices
-}
